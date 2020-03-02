@@ -39,5 +39,7 @@ RUN wget https://getcomposer.org/download/${COMPOSER_VERSION}/composer.phar && \
 
 WORKDIR /var/www/html
 
+EXPOSE 8080
+
 VOLUME /var/www/html/fileadmin
 VOLUME /var/www/html/typo3conf
