@@ -1,5 +1,8 @@
 FROM php:7.2-apache-stretch
 
+EXPOSE 8080
+EXPOSE 8443
+
 # Install TYPO3
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
@@ -42,8 +45,6 @@ RUN cd /var/www/html && \
     chown -R www-data. .
 
 WORKDIR /var/www/html
-
-EXPOSE 8080
 
 VOLUME /var/www/html/fileadmin
 VOLUME /var/www/html/typo3conf
