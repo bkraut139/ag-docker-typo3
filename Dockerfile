@@ -22,7 +22,7 @@ RUN apk add --update \
     rm  -rf /tmp/* /var/cache/apk/*
 
 # Configure PHP
-COPY /etc/php/conf.d/typo3.ini /usr/local/etc/php/conf.d/typo3.ini
+#COPY /etc/php/conf.d/typo3.ini /usr/local/etc/php/conf.d/typo3.ini
 
 # Install Composer
 RUN wget https://getcomposer.org/download/${COMPOSER_VERSION}/composer.phar && \
