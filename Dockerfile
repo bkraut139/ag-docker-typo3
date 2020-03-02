@@ -29,7 +29,7 @@ RUN wget https://getcomposer.org/download/${COMPOSER_VERSION}/composer.phar && \
     mv composer.phar /usr/local/bin/composer && \
     chmod +x /usr/local/bin/composer
 
-COPY src/composer.json /var/www/html/composer.json
+#COPY src/composer.json /var/www/html/composer.json
 
 # Install TYPO3
 RUN cd /var/www/html && \
