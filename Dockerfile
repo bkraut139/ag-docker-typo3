@@ -5,5 +5,5 @@ EXPOSE 8443
 
 WORKDIR /var/www/html
 
-VOLUME /var/www/html/fileadmin
-VOLUME /var/www/html/typo3conf
+#VOLUME /var/www/html/fileadmin
+#VOLUME /var/www/html/typo3conf
