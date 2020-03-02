@@ -32,10 +32,10 @@ RUN wget https://getcomposer.org/download/${COMPOSER_VERSION}/composer.phar && \
 #COPY src/composer.json /var/www/html/composer.json
 
 # Install TYPO3
-RUN cd /var/www/html && \
-    composer install && \
-    touch FIRST_INSTALL && \
-    chown -R www-data. .
+#RUN cd /var/www/html && \
+#    composer install && \
+#    touch FIRST_INSTALL && \
+#    chown -R www-data. .
 
 WORKDIR /var/www/html
 
