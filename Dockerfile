@@ -44,7 +44,7 @@ RUN cd /var/www/html && \
     touch FIRST_INSTALL && \
     chown -R www-data. .
 
-USER root
+EXPOSE 80
 
 # Configure volumes
 VOLUME /var/www/html/fileadmin
