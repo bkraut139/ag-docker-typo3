@@ -3,7 +3,7 @@ services:
   typo3:
     build: .
     ports:
-      - "80:80"
+      - "8080:8080"
     volumes:
       - fileadmin:/var/www/html/fileadmin
       - typo3conf:/var/www/html/typo3conf
